@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zaK-g0-AE0">
+                                <rect key="frame" x="60" y="60" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="0TZ-iZ-q4m"/>
+                                    <constraint firstAttribute="height" constant="64" id="owE-KG-p2c"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-6d-beQ">
+                                <rect key="frame" x="476" y="60" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="N7V-ZV-sdb"/>
+                                    <constraint firstAttribute="height" constant="64" id="PTR-Yy-CBh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="YW7-ce-xbl"/>
+                                    <constraint firstAttribute="width" constant="64" id="xxD-xq-HLn"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="N7V-ZV-sdb"/>
+                                        <exclude reference="YW7-ce-xbl"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zaK-g0-AE0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="D3e-5K-gor"/>
+                            <constraint firstItem="4wy-6d-beQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="VEE-Ll-2jz"/>
+                            <constraint firstItem="zaK-g0-AE0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="afB-sl-073"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4wy-6d-beQ" secondAttribute="trailing" constant="40" id="w0V-B3-88d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceImageView" destination="zaK-g0-AE0" id="fIZ-2z-ebx"/>
+                        <outlet property="vipImageView" destination="4wy-6d-beQ" id="gih-sp-UII"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="325"/>
+        </scene>
+    </scenes>
+</document>
